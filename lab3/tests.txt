@@ -1,0 +1,16 @@
+Sample Test Commands, Lab 3 CS360
+-------------------------------------------------------------------------------------------------------------
+cmd: ls                 -output->   <list all files/directories in your lab3 folder>
+cmd: gcc -m32 ...       -output->   <should compile your code and produce a.out if you're in that directory>  
+cmd: cd ..              -output->   <should move you back one directory when you ls>
+cmd: 360isgreat         -output->   <command 360isgreat not found>
+cmd: cd                 -output->   <should move you back to your HOME directory, /home/<username>, test w/ ls>
+cmd: date               -output->   Tue Sep 29 22:08:32 UTC 2020 (or whatever date/time it is) 
+cmd: echo hi > file     -output->   <should create a file called "file" and write hi to it>
+cmd: cat < file         -output->   <should print "hi" to the terminal>
+cmd: echo test >> file  -output->   <appends "test" to file>
+cmd: cat < file         -output->   <print "hi", and then "test" on separate lines>
+cmd: cat file | less    -output->   <shows the contents of file in a pager program, press q to exit>
+cmd: exit               -output->   <kills your program>
+MULTIPLE PIPES TEST:
+cmd: cat file | grep e | less   -output->   <searches file for words with "e", prints "test" in the less pager since it has an e>

@@ -1,0 +1,159 @@
+enter main
+&argc=ff926620 argv=ff9266b4 env=ff9266c8
+&a=ff9265dc &b=ff9265e0 &c=ff9265e4
+argc = 4
+argv[0] = ./a.out
+argv[1] = one
+argv[2] = two
+argv[3] = three
+enter A
+address of d: ff926590
+address of e: ff926594
+address of f: ff926598
+enter B
+address of g: ff926560
+address of h: ff926564
+address of i: ff926568
+enter C
+address of u: ff926524
+address of v: ff926528
+address of w: ff92652c
+address of i: ff926530
+address of p: ff926534
+
+FP = ebp = ff926548
+stack frame link list
+0xff926548 -> 0xff926578 -> 0xff9265a8 -> 0xff926608 -> NULL
+
+128 stack contents
+ff926524	a           variable u = 10
+ff926528	b           variable v = 11
+ff92652c	c           variable w = 12
+ff926530	d           variable i (in C) = 13
+ff926534	ff926534    variable p  (points to itself)
+ff926538	5
+ff92653c	d369a100
+ff926540	ff926620
+ff926544	565cafd0
+ff926548	ff926578    FP *FP (for C() function)
+ff92654c	565c982c    return PC
+ff926550	7           parameter x
+ff926554	8           parameter y
+ff926558	ff9265a8
+ff92655c	565c97a2
+ff926560	7           variable g = 7
+ff926564	8           variable h = 8
+ff926568	9           variable i (in B) = 9
+ff92656c	d369a100
+ff926570	ff926620
+ff926574	565cafd0
+ff926578	ff9265a8    FP *FP (for B() function)
+ff92657c	565c976a    return PC
+ff926580	4           parameter x
+ff926584	5           parameter y
+ff926588	ff926608
+ff92658c	565c96e0
+ff926590	4           variable d = 4
+ff926594	5           variable e = 5
+ff926598	6           variable f = 6
+ff92659c	d369a100
+ff9265a0	ff926620
+ff9265a4	565cafd0
+ff9265a8	ff926608    FP *FP (for A() function)
+ff9265ac	565c969e    return PC
+ff9265b0	1           parameter x
+ff9265b4	2           parameter y
+ff9265b8	ff927487
+ff9265bc	ff9265e4
+ff9265c0	9
+ff9265c4	ff927477
+ff9265c8	ff9266c8
+ff9265cc	ff9266b4
+ff9265d0	f7f6f000
+ff9265d4	f7f6f000
+ff9265d8	0
+ff9265dc	1           variable a = 1
+ff9265e0	2           variable b = 2
+ff9265e4	3           variable c = 3
+ff9265e8	4
+ff9265ec	d369a100
+ff9265f0	4
+ff9265f4	ff9266b4
+ff9265f8	ff9266c8
+ff9265fc	ff926620
+ff926600	0
+ff926604	f7f6f000
+ff926608	0           FP *FP (for main() function)
+ff92660c	f7db2e91
+ff926610	f7f6f000
+ff926614	f7f6f000
+ff926618	0
+ff92661c	f7db2e91
+ff926620	4           argc = 4
+ff926624	ff9266b4    argv location
+ff926628	ff9266c8    env location
+ff92662c	ff926644
+ff926630	4
+ff926634	ff9266b4
+ff926638	f7f6f000
+ff92663c	f7f9177a
+ff926640	ff9266b0
+ff926644	0
+ff926648	f7f6f000
+ff92664c	0
+ff926650	0
+ff926654	d8cabef8
+ff926658	4a5a58e8
+ff92665c	0
+ff926660	0
+ff926664	0
+ff926668	40
+ff92666c	f7fa9024
+ff926670	0
+ff926674	0
+ff926678	f7f91889
+ff92667c	565cafd0
+ff926680	4
+ff926684	565c9470
+ff926688	0
+ff92668c	565c94a1
+ff926690	565c95ad
+ff926694	4
+ff926698	ff9266b4
+ff92669c	565c9a10
+ff9266a0	565c9a70
+ff9266a4	f7f919d0
+ff9266a8	ff9266ac
+ff9266ac	f7fa9940
+ff9266b0	4
+ff9266b4	ff927477
+ff9266b8	ff92747f
+ff9266bc	ff927483
+ff9266c0	ff927487
+ff9266c4	0
+ff9266c8	ff92748d
+ff9266cc	ff927a79
+ff9266d0	ff927aad
+ff9266d4	ff927acf
+ff9266d8	ff927adc
+ff9266dc	ff927b10
+ff9266e0	ff927b24
+ff9266e4	ff927b36
+ff9266e8	ff927b42
+ff9266ec	ff927b70
+ff9266f0	ff927b82
+ff9266f4	ff927be8
+ff9266f8	ff927bfc
+ff9266fc	ff927c1e
+ff926700	ff927c3a
+ff926704	ff927c7b
+ff926708	ff927cc9
+ff92670c	ff927cdf
+ff926710	ff927d64
+ff926714	ff927d78
+ff926718	ff927d88
+ff92671c	ff927d90
+ff926720	ff927dd0
+exit B
+exit A
+exit main
